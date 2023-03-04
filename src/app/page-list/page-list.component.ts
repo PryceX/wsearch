@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { WikiResult } from '../app.component';
 
 @Component({
   selector: 'app-page-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./page-list.component.css']
 })
 export class PageListComponent {
-
+  @Input() pages: WikiResult[] = [];
 }
